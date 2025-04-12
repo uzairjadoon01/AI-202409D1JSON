@@ -1,0 +1,10 @@
+{
+    "studentId" : "Student1611346" ,
+    "studentName" : "uzair" ,
+    "StudentAge" : 19 ,
+    "studentNic" : true ,
+    "studentHobbies" :["reading","coding"] ,
+    "studentAddress" : {"karachi" : "keamari town" ,
+"peshawer" : "swabi"}
+
+}

@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1 ,
+        "name" : "nikeAq26" ,
+        "price" : 15000 ,
+        "description" : "hello" ,
+        "qty" : 45 ,
+        "image" : "images/im1.jpg"
+    } ,
+{
+        "id" : 2 ,
+        "name" : "nikefg28" ,
+        "price" : 20000 ,
+        "description" : "hello" ,
+        "qty" : 55 ,
+        "image" : "images/im2.jpg"
+} ,
+{
+        "id" : 3 ,
+        "name" : "nikezx30" ,
+        "price" : 25000 ,
+        "description" : "hello" ,
+        "qty" : 60 ,
+        "image" : "images/im3.jpg"
+} ,
+{
+        "id" : 4 ,
+        "name" : "nikezx30" ,
+        "price" : 30000 ,
+        "description" : "hello" ,
+        "qty" : 67 ,
+        "image" : "images/im4.jpg"
+}
+]
