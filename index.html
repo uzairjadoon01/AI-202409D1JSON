@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+    <!-- start container -->
+     
+     <div class="container p-5">
+       <div class="row" id="r1">
+        
+           
+            
+        </div>
+    </div> 
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let productsRow1 = $("#r1");
+        let col = "";
+        $.ajax({
+            url : "product.json",
+            type : "get",
+            success : function (responce) {
+                // console.log (responce.image);
+                $.each(responce,function (key ,value) {
+                    console.log (value.image)    
+                   col+= `<div class="col-md-3">
+        <div class="card text-start">
+            <img class="card-img-top img-fluid1" src="`+value.image+`" alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">`+value.name+`</h4>
+                <p class="card-text">`+value.price+`</p>
+            </div>
+        </div>
+        
+       </div>`
+          
+                    
+                });
+                productsRow1.html(col);
+                
+            }
+
+        });
+    </script>
+
+</body>
+</html>
